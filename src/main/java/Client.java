@@ -1760,7 +1760,7 @@ public final class Client extends GameEngine {
 						var3 = secretPacketBuffer2.runeliteReadInt();
 					} else {
 						var2 = secretPacketBuffer2.method3272();
-						var3 = secretPacketBuffer2.method3309();
+						var3 = secretPacketBuffer2.readIntME();
 					}
 
 					var23 = var2 >> 10 & 31;
@@ -1782,7 +1782,7 @@ public final class Client extends GameEngine {
 						var2 = secretPacketBuffer2.runeliteReadInt();
 						var3 = secretPacketBuffer2.runeliteReadInt();
 					} else {
-						var2 = secretPacketBuffer2.method3309();
+						var2 = secretPacketBuffer2.readIntME();
 						var3 = secretPacketBuffer2.method3275();
 					}
 
@@ -1804,7 +1804,7 @@ public final class Client extends GameEngine {
 						var2 = secretPacketBuffer2.runeliteReadInt();
 					} else {
 						var2 = secretPacketBuffer2.method3299();
-						var3 = secretPacketBuffer2.method3309();
+						var3 = secretPacketBuffer2.readIntME();
 					}
 
 					var67 = PacketBuffer.method3528(var3);
@@ -1898,7 +1898,7 @@ public final class Client extends GameEngine {
 						var3 = secretPacketBuffer2.runeliteReadInt();
 					} else {
 						var2 = secretPacketBuffer2.readUnsignedShort();
-						var3 = secretPacketBuffer2.method3309();
+						var3 = secretPacketBuffer2.readIntME();
 					}
 
 					class211.settings[var2] = var3;
@@ -1921,7 +1921,7 @@ public final class Client extends GameEngine {
 						var3 = secretPacketBuffer2.runeliteReadInt();
 					} else {
 						var2 = secretPacketBuffer2.readInt();
-						var3 = secretPacketBuffer2.method3309();
+						var3 = secretPacketBuffer2.readIntME();
 					}
 
 					WidgetNode var91 = (WidgetNode) componentTable.get((long) var2);
@@ -2059,7 +2059,7 @@ public final class Client extends GameEngine {
 						var23 = secretPacketBuffer2.runeliteReadInt();
 					} else {
 						var2 = secretPacketBuffer2.method3275();
-						var3 = secretPacketBuffer2.method3309();
+						var3 = secretPacketBuffer2.readIntME();
 						var23 = secretPacketBuffer2.readShort();
 					}
 

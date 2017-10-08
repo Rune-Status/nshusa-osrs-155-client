@@ -47,7 +47,7 @@ public final class class60 {
 			int var6;
 			if ((var4 & 2048) != 0) {
 				var3.graphic = var0.method3274();
-				var6 = var0.method3309();
+				var6 = var0.readIntME();
 				var3.field1214 = var6 >> 16;
 				var3.graphicsDelay = (var6 & '\uffff') + Client.gameCycle;
 				var3.field1249 = 0;
