@@ -12,6 +12,9 @@ public class class86 {
 			var1 = Client.secretPacketBuffer2.readUShortLEA();
 			int var2 = Client.secretPacketBuffer2.readUShortA();
 			var3 = Client.secretPacketBuffer2.readUnsignedShort();
+
+			System.out.println(var1 + " " + var2 + " " + var3);
+
 			class37.xteaKeys = new int[var3][4];
 
 			for (var4 = 0; var4 < var3; ++var4) {

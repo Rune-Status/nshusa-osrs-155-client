@@ -539,7 +539,7 @@ public final class class41 {
 				var1 = var0 >> 2;
 				var2 = var0 & 3;
 				var3 = Client.field987[var1];
-				var29 = Client.secretPacketBuffer2.method3418();
+				var29 = Client.secretPacketBuffer2.readUByteS();
 			}
 
 			var30 = (var29 >> 4 & 7) + class31.field453;
@@ -676,7 +676,7 @@ public final class class41 {
 						var1 = (var0 >> 4 & 7) + class31.field453;
 						var2 = (var0 & 7) + Actor.field1270;
 						var3 = Client.secretPacketBuffer2.readUShortLEA();
-						var29 = Client.secretPacketBuffer2.method3418();
+						var29 = Client.secretPacketBuffer2.readUByteS();
 					}
 
 					var30 = var29 >> 2;
@@ -840,7 +840,7 @@ public final class class41 {
 								var8 = (var31 & 7) + Actor.field1270;
 								var9 = Client.secretPacketBuffer2.readUShortA();
 								var10 = Client.secretPacketBuffer2.readUShortA();
-								var11 = Client.secretPacketBuffer2.method3418();
+								var11 = Client.secretPacketBuffer2.readUByteS();
 							}
 
 							var12 = var11 >> 2;

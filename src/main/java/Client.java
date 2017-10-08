@@ -2135,13 +2135,15 @@ public final class Client extends GameEngine {
 				}
 
 				int var82;
+
+				// interface
 				if (packetType == Opcodes.PACKET_SERVER_127) {
 					if (RUNELITE_PACKET) {
 						var23 = secretPacketBuffer2.runeliteReadInt();
 						var3 = secretPacketBuffer2.runeliteReadInt();
 						var2 = secretPacketBuffer2.runeliteReadInt();
 					} else {
-						var2 = secretPacketBuffer2.method3418();
+						var2 = secretPacketBuffer2.readUByteS();
 						var3 = secretPacketBuffer2.method3272();
 						var23 = secretPacketBuffer2.method3283();
 					}
@@ -2185,7 +2187,7 @@ public final class Client extends GameEngine {
 							var4 = secretPacketBuffer2.runeliteReadString();
 							var2 = secretPacketBuffer2.runeliteReadInt();
 						} else {
-							var2 = secretPacketBuffer2.method3418();
+							var2 = secretPacketBuffer2.readUByteS();
 							var3 = secretPacketBuffer2.readUByteN();
 							var4 = secretPacketBuffer2.readString();
 						}
@@ -3059,7 +3061,7 @@ public final class Client extends GameEngine {
 					if (packetType != Opcodes.PACKET_SERVER_178) {
 						if (packetType == Opcodes.PACKET_SERVER_104) {
 							class31.field453 = secretPacketBuffer2.readUnsignedShortOb1();
-							Actor.field1270 = secretPacketBuffer2.method3418();
+							Actor.field1270 = secretPacketBuffer2.readUByteS();
 
 							while (secretPacketBuffer2.offset < packetLength) {
 								packetType = secretPacketBuffer2.readUnsignedByte();

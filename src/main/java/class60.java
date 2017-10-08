@@ -114,7 +114,7 @@ public final class class60 {
 			int var13;
 			int var17;
 			if ((var4 & 32) != 0) {
-				var6 = var0.method3418();
+				var6 = var0.readUByteS();
 				int var11;
 				int var12;
 				int var18;
@@ -147,8 +147,8 @@ public final class class60 {
 						var10 = var0.getUSmart();
 						if (var10 != 32767) {
 							var11 = var0.getUSmart();
-							var12 = var0.method3418();
-							var13 = var10 > 0 ? var0.method3418() : var12;
+							var12 = var0.readUByteS();
+							var13 = var10 > 0 ? var0.readUByteS() : var12;
 							var3.method1600(var9, Client.gameCycle, var10, var11, var12, var13);
 						} else {
 							var3.method1591(var9);
