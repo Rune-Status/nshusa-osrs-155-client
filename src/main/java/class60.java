@@ -38,7 +38,7 @@ public final class class60 {
 
 			byte var5 = -1;
 			if ((var4 & 128) != 0) {
-				var3.interacting = var0.method3272();
+				var3.interacting = var0.readUShortLE();
 				if (var3.interacting == '\uffff') {
 					var3.interacting = -1;
 				}
@@ -90,7 +90,7 @@ public final class class60 {
 				var3.field1250 = var0.method3302();
 				var3.field1216 = var0.method3302();
 				var3.field1255 = var0.readUShortLEA() + Client.gameCycle;
-				var3.field1254 = var0.method3272() + Client.gameCycle;
+				var3.field1254 = var0.readUShortLE() + Client.gameCycle;
 				var3.field1261 = var0.readUShortLEA();
 				if (var3.field887) {
 					var3.field1236 += var3.field907;
@@ -168,7 +168,7 @@ public final class class60 {
 			}
 
 			if ((var4 & 16) != 0) {
-				var6 = var0.method3272();
+				var6 = var0.readUShortLE();
 				Permission var20 = (Permission) class48.forOrdinal(ClanMember.method1195(), var0.readUnsignedByte());
 				boolean var23 = var0.readUnsignedShortOb1() == 1;
 				var9 = var0.readUByteN();

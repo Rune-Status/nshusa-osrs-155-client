@@ -78,7 +78,7 @@ public final class class270 {
 
 			int var8;
 			if ((var4 & 32) != 0) {
-				var5 = Client.secretPacketBuffer2.method3272();
+				var5 = Client.secretPacketBuffer2.readUShortLE();
 				var6 = Client.secretPacketBuffer2.readUShortLEA();
 				var7 = var3.x - (var5 - WallObject.baseX - WallObject.baseX) * 64;
 				var8 = var3.y - (var6 - Varcs.baseY - Varcs.baseY) * 64;

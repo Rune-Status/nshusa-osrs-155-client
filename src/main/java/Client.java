@@ -1759,7 +1759,7 @@ public final class Client extends GameEngine {
 						var2 = secretPacketBuffer2.runeliteReadInt();
 						var3 = secretPacketBuffer2.runeliteReadInt();
 					} else {
-						var2 = secretPacketBuffer2.method3272();
+						var2 = secretPacketBuffer2.readUShortLE();
 						var3 = secretPacketBuffer2.readIntME();
 					}
 
@@ -1823,7 +1823,7 @@ public final class Client extends GameEngine {
 						var3 = secretPacketBuffer2.runeliteReadInt();
 						var2 = secretPacketBuffer2.runeliteReadInt();
 					} else {
-						var2 = secretPacketBuffer2.method3272();
+						var2 = secretPacketBuffer2.readUShortLE();
 						var3 = secretPacketBuffer2.method3326();
 					}
 
@@ -2014,7 +2014,7 @@ public final class Client extends GameEngine {
 						var3 = secretPacketBuffer2.runeliteReadInt();
 					} else {
 						var2 = secretPacketBuffer2.readUnsignedShort();
-						var3 = secretPacketBuffer2.method3272();
+						var3 = secretPacketBuffer2.readUShortLE();
 						var23 = secretPacketBuffer2.method3326();
 					}
 
@@ -2083,7 +2083,7 @@ public final class Client extends GameEngine {
 
 				if (packetType == Opcodes.PACKET_SERVER_20) {
 					var2 = secretPacketBuffer2.method3326();
-					var3 = secretPacketBuffer2.method3272();
+					var3 = secretPacketBuffer2.readUShortLE();
 					if (var3 == '\uffff') {
 						var3 = -1;
 					}
@@ -2144,7 +2144,7 @@ public final class Client extends GameEngine {
 						var2 = secretPacketBuffer2.runeliteReadInt();
 					} else {
 						var2 = secretPacketBuffer2.readUByteS();
-						var3 = secretPacketBuffer2.method3272();
+						var3 = secretPacketBuffer2.readUShortLE();
 						var23 = secretPacketBuffer2.method3283();
 					}
 
@@ -2362,7 +2362,7 @@ public final class Client extends GameEngine {
 							var26 = secretPacketBuffer2.runeliteReadInt();
 						} else {
 							var2 = secretPacketBuffer2.readInt();
-							var3 = secretPacketBuffer2.method3272();
+							var3 = secretPacketBuffer2.readUShortLE();
 							var23 = secretPacketBuffer2.readUnsignedShort();
 							var26 = secretPacketBuffer2.readUnsignedShort();
 						}
@@ -2673,7 +2673,7 @@ public final class Client extends GameEngine {
 						var26 = secretPacketBuffer2.readUnsignedShort();
 
 						for (var25 = 0; var25 < var26; ++var25) {
-							var34 = secretPacketBuffer2.method3272();
+							var34 = secretPacketBuffer2.readUShortLE();
 							var82 = secretPacketBuffer2.readUnsignedByte();
 							if (var82 == 255) {
 								var82 = secretPacketBuffer2.readInt();

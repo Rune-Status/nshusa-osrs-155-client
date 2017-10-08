@@ -595,7 +595,7 @@ public final class class41 {
 						var0 = Client.secretPacketBuffer2.readUnsignedShortOb1();
 						var1 = (var0 >> 4 & 7) + class31.field453;
 						var2 = (var0 & 7) + Actor.field1270;
-						var3 = Client.secretPacketBuffer2.method3272();
+						var3 = Client.secretPacketBuffer2.readUShortLE();
 						var29 = Client.secretPacketBuffer2.readUByteN();
 					}
 
