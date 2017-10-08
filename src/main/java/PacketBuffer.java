@@ -21,7 +21,7 @@ public final class PacketBuffer extends Buffer {
 	}
 
 	public void putOpcode(int var1) {
-		super.payload[++super.offset - 1] = (byte) (var1 + this.cipher.nextInt());
+		super.payload[++super.offset - 1] = (byte) (var1 /*+ this.cipher.nextInt()*/);
 	}
 
 	public void bitAccess() {

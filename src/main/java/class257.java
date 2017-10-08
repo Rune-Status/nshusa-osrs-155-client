@@ -444,6 +444,9 @@ public enum class257 implements RSEnum {
 						}
 
 						if (var9) {
+
+							System.out.println("small_button_press: opcode=" + Opcodes.PACKET_CLIENT_SMALL_BUTTON_PRESS + " value=" + + var1);
+
 							Client.secretPacketBuffer1.putOpcode(Opcodes.PACKET_CLIENT_SMALL_BUTTON_PRESS);
 							if (Client.RUNELITE_PACKET) {
 								Client.secretPacketBuffer1.runeliteWriteInt(var1);

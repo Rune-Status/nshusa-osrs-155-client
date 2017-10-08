@@ -1971,6 +1971,7 @@ public final class Client extends GameEngine {
 					return true;
 				}
 
+				// interface text
 				if (packetType == Opcodes.PACKET_SERVER_42) {
 					if (RUNELITE_PACKET) {
 						var2 = secretPacketBuffer2.runeliteReadInt();
