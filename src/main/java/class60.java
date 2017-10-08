@@ -46,7 +46,7 @@ public final class class60 {
 
 			int var6;
 			if ((var4 & 2048) != 0) {
-				var3.graphic = var0.method3274();
+				var3.graphic = var0.readUShortLEA();
 				var6 = var0.readIntME();
 				var3.field1214 = var6 >> 16;
 				var3.graphicsDelay = (var6 & '\uffff') + Client.gameCycle;
@@ -89,9 +89,9 @@ public final class class60 {
 				var3.field1229 = var0.method3267();
 				var3.field1250 = var0.method3302();
 				var3.field1216 = var0.method3302();
-				var3.field1255 = var0.method3274() + Client.gameCycle;
+				var3.field1255 = var0.readUShortLEA() + Client.gameCycle;
 				var3.field1254 = var0.method3272() + Client.gameCycle;
-				var3.field1261 = var0.method3274();
+				var3.field1261 = var0.readUShortLEA();
 				if (var3.field887) {
 					var3.field1236 += var3.field907;
 					var3.field1229 += var3.field908;
@@ -212,7 +212,7 @@ public final class class60 {
 			}
 
 			if ((var4 & 64) != 0) {
-				var3.field1235 = var0.method3274();
+				var3.field1235 = var0.readUShortLEA();
 				if (var3.queueSize == 0) {
 					var3.orientation = var3.field1235;
 					var3.field1235 = -1;

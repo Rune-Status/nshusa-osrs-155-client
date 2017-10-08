@@ -370,7 +370,7 @@ public class Buffer extends Node {
 		return var1;
 	}
 
-	public int method3274() {
+	public int readUShortLEA() {
 		this.offset += 2;
 		return ((this.payload[this.offset - 1] & 255) << 8) + (this.payload[this.offset - 2] - 128 & 255);
 	}

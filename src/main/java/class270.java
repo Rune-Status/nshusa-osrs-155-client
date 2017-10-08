@@ -32,7 +32,7 @@ public final class class270 {
 			}
 
 			if ((var4 & 1) != 0) {
-				var3.composition = class72.getNpcDefinition(Client.secretPacketBuffer2.method3274());
+				var3.composition = class72.getNpcDefinition(Client.secretPacketBuffer2.readUShortLEA());
 				var3.field1211 = var3.composition.field3559;
 				var3.field1265 = var3.composition.field3582;
 				var3.field1215 = var3.composition.field3565;
@@ -79,7 +79,7 @@ public final class class270 {
 			int var8;
 			if ((var4 & 32) != 0) {
 				var5 = Client.secretPacketBuffer2.method3272();
-				var6 = Client.secretPacketBuffer2.method3274();
+				var6 = Client.secretPacketBuffer2.readUShortLEA();
 				var7 = var3.x - (var5 - WallObject.baseX - WallObject.baseX) * 64;
 				var8 = var3.y - (var6 - Varcs.baseY - Varcs.baseY) * 64;
 				if (var7 != 0 || var8 != 0) {
@@ -88,7 +88,7 @@ public final class class270 {
 			}
 
 			if ((var4 & 16) != 0) {
-				var3.interacting = Client.secretPacketBuffer2.method3274();
+				var3.interacting = Client.secretPacketBuffer2.readUShortLEA();
 				if (var3.interacting == '\uffff') {
 					var3.interacting = -1;
 				}

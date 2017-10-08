@@ -1604,7 +1604,7 @@ public final class Client extends GameEngine {
 						var103 = secretPacketBuffer2.runeliteReadByte();
 					} else {
 						var103 = secretPacketBuffer2.method3268();
-						var3 = secretPacketBuffer2.method3274();
+						var3 = secretPacketBuffer2.readUShortLEA();
 					}
 
 					class211.settings[var3] = var103;
@@ -3024,6 +3024,7 @@ public final class Client extends GameEngine {
 						return true;
 					}
 
+					// statiic region
 					if (packetType == Opcodes.PACKET_SERVER_150) {
 						class86.xteaChanged(false);
 						secretPacketBuffer2.readOpcode();
@@ -3033,6 +3034,7 @@ public final class Client extends GameEngine {
 						return true;
 					}
 
+					// dynamic region
 					if (packetType == Opcodes.PACKET_SERVER_148) {
 						class86.xteaChanged(true);
 						secretPacketBuffer2.readOpcode();

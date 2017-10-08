@@ -9,7 +9,7 @@ public class class86 {
 		int var6;
 		int var7;
 		if (!Client.isDynamicRegion) {
-			var1 = Client.secretPacketBuffer2.method3274();
+			var1 = Client.secretPacketBuffer2.readUShortLEA();
 			int var2 = Client.secretPacketBuffer2.method3299();
 			var3 = Client.secretPacketBuffer2.readUnsignedShort();
 			class37.xteaKeys = new int[var3][4];
@@ -51,7 +51,7 @@ public class class86 {
 
 			class11.method60(var1, var2, true);
 		} else {
-			var1 = Client.secretPacketBuffer2.method3274();
+			var1 = Client.secretPacketBuffer2.readUShortLEA();
 			boolean var14 = Client.secretPacketBuffer2.method3265() == 1;
 			var3 = Client.secretPacketBuffer2.readUnsignedShort();
 			var4 = Client.secretPacketBuffer2.readUnsignedShort();
