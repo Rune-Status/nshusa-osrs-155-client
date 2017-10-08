@@ -1741,7 +1741,7 @@ public final class Client extends GameEngine {
 				boolean var66;
 				Widget var67;
 				if (packetType == Opcodes.PACKET_SERVER_55) {
-					var66 = secretPacketBuffer2.method3265() == 1;
+					var66 = secretPacketBuffer2.readUByteN() == 1;
 					var3 = secretPacketBuffer2.method3283();
 					var67 = PacketBuffer.method3528(var3);
 					if (var66 != var67.isHidden) {
@@ -2186,7 +2186,7 @@ public final class Client extends GameEngine {
 							var2 = secretPacketBuffer2.runeliteReadInt();
 						} else {
 							var2 = secretPacketBuffer2.method3418();
-							var3 = secretPacketBuffer2.method3265();
+							var3 = secretPacketBuffer2.readUByteN();
 							var4 = secretPacketBuffer2.readString();
 						}
 

@@ -335,7 +335,7 @@ public class Buffer extends Node {
 		this.payload[++this.offset - 1] = (byte) ((int) var1);
 	}
 
-	public int method3265() {
+	public int readUByteN() {
 		return 0 - this.payload[++this.offset - 1] & 255;
 	}
 

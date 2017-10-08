@@ -171,7 +171,7 @@ public final class class60 {
 				var6 = var0.method3272();
 				Permission var20 = (Permission) class48.forOrdinal(ClanMember.method1195(), var0.readUnsignedByte());
 				boolean var23 = var0.readUnsignedShortOb1() == 1;
-				var9 = var0.method3265();
+				var9 = var0.readUByteN();
 				var10 = var0.offset;
 				if (var3.name != null && var3.composition != null) {
 					boolean var22 = false;

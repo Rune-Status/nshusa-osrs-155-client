@@ -134,7 +134,7 @@ public final class class270 {
 						if (var9 != 32767) {
 							var10 = Client.secretPacketBuffer2.getUSmart();
 							var11 = Client.secretPacketBuffer2.readUnsignedShortOb1();
-							int var12 = var9 > 0 ? Client.secretPacketBuffer2.method3265() : var11;
+							int var12 = var9 > 0 ? Client.secretPacketBuffer2.readUByteN() : var11;
 							var3.method1600(var8, Client.gameCycle, var9, var10, var11, var12);
 						} else {
 							var3.method1591(var8);

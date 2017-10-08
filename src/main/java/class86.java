@@ -52,7 +52,7 @@ public class class86 {
 			class11.method60(var1, var2, true);
 		} else {
 			var1 = Client.secretPacketBuffer2.readUShortLEA();
-			boolean var14 = Client.secretPacketBuffer2.method3265() == 1;
+			boolean var14 = Client.secretPacketBuffer2.readUByteN() == 1;
 			var3 = Client.secretPacketBuffer2.readUnsignedShort();
 			var4 = Client.secretPacketBuffer2.readUnsignedShort();
 			Client.secretPacketBuffer2.bitAccess();
