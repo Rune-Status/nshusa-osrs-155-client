@@ -375,7 +375,7 @@ public class Buffer extends Node {
 		return ((this.payload[this.offset - 1] & 255) << 8) + (this.payload[this.offset - 2] - 128 & 255);
 	}
 
-	public int method3299() {
+	public int readUShortA() {
 		this.offset += 2;
 		return (this.payload[this.offset - 1] - 128 & 255) + ((this.payload[this.offset - 2] & 255) << 8);
 	}

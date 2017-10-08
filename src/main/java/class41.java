@@ -692,7 +692,7 @@ public final class class41 {
 						var0 = Client.secretPacketBuffer2.runeliteReadInt();
 						var1 = Client.secretPacketBuffer2.runeliteReadInt();
 					} else {
-						var0 = Client.secretPacketBuffer2.method3299();
+						var0 = Client.secretPacketBuffer2.readUShortA();
 						var1 = Client.secretPacketBuffer2.readUnsignedShort();
 						var2 = Client.secretPacketBuffer2.readUnsignedShortOb1();
 					}
@@ -833,13 +833,13 @@ public final class class41 {
 								var1 = Client.secretPacketBuffer2.readUShortLEA();
 								var36 = Client.secretPacketBuffer2.method3267();
 								var37 = Client.secretPacketBuffer2.method3267();
-								var29 = Client.secretPacketBuffer2.method3299();
+								var29 = Client.secretPacketBuffer2.readUShortA();
 								var39 = Client.secretPacketBuffer2.readByte();
 								var31 = Client.secretPacketBuffer2.readUByteN();
 								var32 = (var31 >> 4 & 7) + class31.field453;
 								var8 = (var31 & 7) + Actor.field1270;
-								var9 = Client.secretPacketBuffer2.method3299();
-								var10 = Client.secretPacketBuffer2.method3299();
+								var9 = Client.secretPacketBuffer2.readUShortA();
+								var10 = Client.secretPacketBuffer2.readUShortA();
 								var11 = Client.secretPacketBuffer2.method3418();
 							}
 

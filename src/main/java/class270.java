@@ -16,7 +16,7 @@ public final class class270 {
 			int var4 = Client.secretPacketBuffer2.readUnsignedByte();
 			int var5;
 			if ((var4 & 4) != 0) {
-				var3.graphic = Client.secretPacketBuffer2.method3299();
+				var3.graphic = Client.secretPacketBuffer2.readUShortA();
 				var5 = Client.secretPacketBuffer2.method3326();
 				var3.field1214 = var5 >> 16;
 				var3.graphicsDelay = (var5 & '\uffff') + Client.gameCycle;

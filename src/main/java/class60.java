@@ -158,7 +158,7 @@ public final class class60 {
 			}
 
 			if ((var4 & 8) != 0) {
-				var6 = var0.method3299();
+				var6 = var0.readUShortA();
 				if (var6 == '\uffff') {
 					var6 = -1;
 				}

@@ -1378,7 +1378,7 @@ public final class Client extends GameEngine {
 					if (RUNELITE_PACKET) {
 						var2 = secretPacketBuffer2.runeliteReadInt();
 					} else {
-						var2 = secretPacketBuffer2.method3299();
+						var2 = secretPacketBuffer2.readUShortA();
 					}
 
 					if (var2 == '\uffff') {
@@ -1648,7 +1648,7 @@ public final class Client extends GameEngine {
 				}
 
 				if (packetType == Opcodes.PACKET_SERVER_90) {
-					var2 = secretPacketBuffer2.method3299();
+					var2 = secretPacketBuffer2.readUShortA();
 					if (var2 == '\uffff') {
 						var2 = -1;
 					}
@@ -1803,7 +1803,7 @@ public final class Client extends GameEngine {
 						var3 = secretPacketBuffer2.runeliteReadInt();
 						var2 = secretPacketBuffer2.runeliteReadInt();
 					} else {
-						var2 = secretPacketBuffer2.method3299();
+						var2 = secretPacketBuffer2.readUShortA();
 						var3 = secretPacketBuffer2.readIntME();
 					}
 
@@ -2326,14 +2326,14 @@ public final class Client extends GameEngine {
 
 					long var27;
 					if (packetType == Opcodes.PACKET_SERVER_72) {
-						var2 = secretPacketBuffer2.method3299();
+						var2 = secretPacketBuffer2.readUShortA();
 						if (var2 == '\uffff') {
 							var2 = -1;
 						}
 
 						var3 = secretPacketBuffer2.method3283();
 						var23 = secretPacketBuffer2.readInt();
-						var26 = secretPacketBuffer2.method3299();
+						var26 = secretPacketBuffer2.readUShortA();
 						if (var26 == '\uffff') {
 							var26 = -1;
 						}
