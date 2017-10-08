@@ -354,7 +354,7 @@ public class Buffer extends Node {
 				+ (this.payload[this.offset - 3] & 255) + ((this.payload[this.offset - 1] & 255) << 16);
 	}
 
-	public int method3283() {
+	public int readIntIM() {
 		this.offset += 4;
 		return ((this.payload[this.offset - 1] & 255) << 8) + ((this.payload[this.offset - 4] & 255) << 16)
 				+ (this.payload[this.offset - 2] & 255) + ((this.payload[this.offset - 3] & 255) << 24);

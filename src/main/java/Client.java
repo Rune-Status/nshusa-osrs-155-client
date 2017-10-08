@@ -1445,7 +1445,7 @@ public final class Client extends GameEngine {
 					if (RUNELITE_PACKET) {
 						var2 = secretPacketBuffer2.runeliteReadInt();
 					} else {
-						var2 = secretPacketBuffer2.method3283();
+						var2 = secretPacketBuffer2.readIntIM();
 					}
 
 					var95 = PacketBuffer.method3528(var2);
@@ -1742,7 +1742,7 @@ public final class Client extends GameEngine {
 				Widget var67;
 				if (packetType == Opcodes.PACKET_SERVER_55) {
 					var66 = secretPacketBuffer2.readUByteN() == 1;
-					var3 = secretPacketBuffer2.method3283();
+					var3 = secretPacketBuffer2.readIntIM();
 					var67 = PacketBuffer.method3528(var3);
 					if (var66 != var67.isHidden) {
 						var67.isHidden = var66;
@@ -2034,7 +2034,7 @@ public final class Client extends GameEngine {
 						ItemLayer.method2495();
 						var2 = secretPacketBuffer2.readUnsignedByte();
 						var3 = secretPacketBuffer2.readUnsignedByte();
-						var23 = secretPacketBuffer2.method3283();
+						var23 = secretPacketBuffer2.readIntIM();
 					}
 
 					skillExperiences[var3] = var23;
@@ -2145,7 +2145,7 @@ public final class Client extends GameEngine {
 					} else {
 						var2 = secretPacketBuffer2.readUByteS();
 						var3 = secretPacketBuffer2.readUShortLE();
-						var23 = secretPacketBuffer2.method3283();
+						var23 = secretPacketBuffer2.readIntIM();
 					}
 
 					var5 = (WidgetNode) componentTable.get((long) var23);
@@ -2333,7 +2333,7 @@ public final class Client extends GameEngine {
 							var2 = -1;
 						}
 
-						var3 = secretPacketBuffer2.method3283();
+						var3 = secretPacketBuffer2.readIntIM();
 						var23 = secretPacketBuffer2.readInt();
 						var26 = secretPacketBuffer2.readUShortA();
 						if (var26 == '\uffff') {
